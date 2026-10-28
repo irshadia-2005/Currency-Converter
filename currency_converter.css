@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #CE7263
+}
+.container{
+    background-color: grey;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    min-height: 45vh;
+    min-width: 30vw;
+}
+form{
+    margin: 2rem 0 2rem 0;
+}
+form button,select,input{
+    width:100%;
+    border:none;
+   outline:none;
+}
+.dropdown{
+  display: flex;
+padding: 12px;
+}
+.msg{
+    padding: 5px;
+    font-size:medium;
+}

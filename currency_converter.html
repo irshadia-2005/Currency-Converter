@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency_converter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="container">
+    <h1>Currency Converter</h1>
+    <form>
+        <div class="amount">
+            <p>Enter Amount: </p>
+            <input id="amount" value="100" type="number" placeholder="Enter your amount">
+        </div>
+        <div class="dropdown">
+            <div class="from">
+            <p>FROM</p>
+            <div class="select-container">
+                <img id="from-flag" src="https://flagsapi.com/US/flat/64.png" alt="United States flag">
+                <select id="from-currency" name="from">
+                </select>
+            </div>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <div class="to">
+               <p>TO</p>
+            <div class="select-container">
+                <img id="to-flag" src="https://flagsapi.com/IN/flat/64.png" alt="India flag">
+                <select id="to-currency" name="to">   
+                </select>
+            </div>  
+            </div>
+        </div>
+
+        <button type="submit">Convert</button>
+                <div class="msg" role="status" aria-live="polite">Loading exchange rates...</div>
+    </form>
+     </div>
+     <script src="codes.js"></script>
+    <script src="currency_converter.js"></script>
+</body>
+</html>
